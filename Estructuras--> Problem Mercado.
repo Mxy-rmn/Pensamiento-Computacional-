@@ -1,0 +1,39 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+struct datosporarticulo{
+  int codigo;
+  string descripcion;
+  int costo;
+};
+int main()
+ {
+int n,total = 0;
+cout<<"Ingrese el total de articulos que compro:  ";
+std::cin>>n;
+datosporarticulo datosporarticulo[n];
+for(int i=0;i<n;i++){
+    cout<<"---Articulo "<<i+1<<"---"<<std::endl;
+    cout<<"Inserte el codigo del Articulo "<<i+1<<std::endl;
+    cin>>datosporarticulo[i].codigo;
+    cout<<"Inserte el nombre del Articulo "<<i+1<<std::endl;
+     cin>>datosporarticulo[i].descripcion;
+    cout<<"Inserte el precio del Articulo "<<i+1<<std::endl;
+     cin>>datosporarticulo[i].costo;
+
+//////////////////////////////////////////////////////////////////
+
+    total += datosporarticulo[i].costo;
+}
+for(int i=0;i<n;i++){
+    cout<<"---Articulo "<<i+1<<"--- \n Su codigo es:"<<datosporarticulo[i].codigo<<endl;
+   cout<<"---Articulo "<<i+1<<"--- \n Su nombre es:"<<datosporarticulo[i].descripcion<<endl;
+  cout<<"---Articulo "<<i+1<<"--- \n Su costo es:"<<datosporarticulo[i].costo<<endl;
+  
+  cout<<"\n\n";
+}
+
+cout<<"El total de sus productos es:  "<<total;
+return 0;
+}
