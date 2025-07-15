@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+void al_cuadrado(float x);
+int main()
+{
+    float x;
+    cout<<"Inserte el numero que desea elevar: ";cin>>x;
+        al_cuadrado(x);
+    return 0;
+}
+void al_cuadrado(float x){
+                 float cuadrado = x*x;
+     cout<<"El numero al cuadrado es:  "<<cuadrado<<endl;
+}
