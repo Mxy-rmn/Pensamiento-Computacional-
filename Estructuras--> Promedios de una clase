@@ -1,0 +1,43 @@
+#include<iostream>
+#include<string>
+using namespace std;
+struct alumno{
+   string nombre;
+   int edad;
+   int promedio;
+};
+int main(){
+int n,mayor_pro = 0;
+cout<<"Digite la cantidad de alumnos: ";
+cin>>n;
+alumno alumno[n];
+for(int i=0;i<n;i++)
+    {
+    cout<<"Alumno"<<i+1<<endl;
+    cout<<"---Ingrese su nombre---";
+    cin>>alumno[i].nombre;
+    cout<<"---Ingrese su edad---";
+    cin>>alumno[i].edad;
+    cout<<"---Ingrese su promedio---";
+    cin>>alumno[i].promedio;
+    cout<<"\n\n";
+    }
+    for(int i=0;i<n;i++)
+    {
+       if(alumno[i].promedio>mayor_pro)
+       {
+          mayor_pro = alumno[i].promedio;
+       }
+    }
+    for(int i=0;i<n;i++)
+    {
+     if (alumno[i].promedio == mayor_pro) {
+            cout << "Nombres: " << alumno[i].nombre << endl;
+            cout << "Código: " << alumno[i].edad << endl;
+            cout << "Promedio: " << alumno[i].promedio<<endl;
+            cout << endl;
+     }
+
+    }
+    return 0;
+}
