@@ -1,0 +1,46 @@
+#include<iostream>
+#include<string>
+using namespace std;
+struct dir_expaola{
+   string direccion;
+    string ciudad;
+   string provincia;
+};
+struct name_expaola{
+    string nombre;
+    struct dir_expaola direxpao;
+    int edad;
+};
+int main()
+{
+    int n;
+cout<<"Introdusca cuantos ex tuvo paola: ";
+cin>>n;
+name_expaola name_expaola[n];
+for(int i=0;i<n;i++){
+   cout<<"EX"<<i+1<<endl;
+   cout<<"Introdusca su nombre"<<endl;
+   cin>>name_expaola[i].nombre;
+   cout<<"Introdusca su direccion"<<endl;
+   cin>>name_expaola[i].direxpao.direccion;
+   cout<<"Introdusca su ciudad"<<endl;
+   cin>>name_expaola[i].direxpao.ciudad;
+   cout<<"Introdusca su provincia"<<endl;
+    cin>>name_expaola[i].direxpao.provincia;
+    cout<<"Ahora introdusca su edad"<<endl;
+   cin>>name_expaola[i].edad;
+   cout<<"\n\n";
+}
+/////////////////////////////////////////////
+for(int i=0;i<n;i++)
+{
+cout<<"EX"<<i+1<<endl;
+cout<<name_expaola[i].nombre<<endl;
+cout<<name_expaola[i].direxpao.direccion<<endl;
+cout<<name_expaola[i].direxpao.ciudad<<endl;
+cout<<name_expaola[i].direxpao.provincia<<endl;
+cout<<name_expaola[i].edad<<endl;
+cout<<"\n\n";
+}
+return 0;
+}
