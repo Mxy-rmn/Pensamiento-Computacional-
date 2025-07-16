@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int nume,*mem_num;
+  cout<<"Digite un numero : ";
+  cin>>nume;
+
+ mem_num = &nume;
+
+  if(*mem_num%2==0)
+  {
+  cout<<"El numero es par"<<endl;
+  cout<<"El numero es:  "<<*mem_num<<endl;
+  cout<<"Posicion de memoria:  "<<mem_num<<endl;
+  }
+  else {
+  cout<<"El numero es impar"<<endl;
+  cout<<"El numero es:  "<<*mem_num<<endl;
+  cout<<"Posicion de memoria:  "<<mem_num<<endl;
+  }
+  return 0;
+}
