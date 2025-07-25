@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+
+
+int edad;
+char sexo[15];
+float altura;
+
+cout<<"Introdusca su edad:  \n";
+cin>>edad;
+cout<<"Introdusca su sexo:  \n";
+cin>>sexo;
+cout<<"Introdusca su altura: \n ";
+cin>>altura;
+
+cout<<"\nSu EDAD es:"<<edad<<endl;
+cout<<"\nSu SEXO es:"<<sexo<<endl;
+cout<<"\nSu ALTURA es:"<<altura<<endl;
+return 0;
+
+
+}
