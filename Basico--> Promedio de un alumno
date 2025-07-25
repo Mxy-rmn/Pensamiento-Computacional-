@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  char a,b,c,d,med;
+
+  cout<<"Introdusca la nota A: ";<<cin a;
+   cout<<"Introdusca la nota B: \n";<<cin b;
+    cout<<"Introdusca la nota C: \n";<<cin c;
+     cout<<"Introdusca la nota D:  \n";<<cin d;
+
+     med = (a+b+c+d)/4;
+
+     cout<<"La nota final media de los alumnos es:  \n"<<med;
+
+     return 0;
+
+  }
+
+
