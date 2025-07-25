@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+
+    int M,R,S;
+    float a,b,D;
+
+cout<<"Inserte 2 numeros\n";//inicio
+cin>>a>>b;
+
+S = a+b;
+R = a-b;
+M = a*b;
+D = a/b;
+
+cout<<"Su suma es"<<endl;
+cout<<S<<endl;
+cout<<"Su resta es"<<endl;
+cout<<R<<endl;
+cout<<"Su multiplicacion es"<<endl;
+cout<<M<<endl;
+cout<<"Su division es"<<endl;
+cout<<D<<endl;
+
+return 0;
+}
