@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int edad;
+cout<<"Ingrese su edad respectiva"<<endl:
+cin>>edad;
+
+switch(edad)
+
+case 0<=3 : cout<<"Usted es un bebe"<<endl;
+break;
+  case 4<=14 : cout<<"Usted es un nene"<<endl;
+  break;
+  case 15<=18 : cout<<"Usted es un gran joven"<<endl;
+  break;
+  case 19<=65 : cout<<"Usted es un adulto"<<endl;
+  break;
+  case 65<=99 : cout<<"Usted es un adulto de la tercera edad"<<endl;
+  break;
+  {
+  default
+       cout<<"Usted no ingreso una edad existente"<<endl;
+       cout<<"Intente de nuevo";
+       }
+       return 0;
+        }
