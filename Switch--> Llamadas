@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+int main() {
+  int codigo,minutos;
+float precio;
+cout<<"Ingrese el codigo de su pais"<<endl;
+cin>>codigo>>minutos;
+switch(codigo){
+case 12:
+    precio = minutos*2;
+break;
+    case 15:
+    precio = minutos*2.2;
+break;
+    case 18:
+        precio = minutos*4.5;
+break;
+    case 19:
+        precio = minutos*3.5;
+break;
+    case 23:
+        precio = minutos*6;
+break;
+    case 25:
+        precio = minutos*6;
+break;
+    case 29:
+        precio = minutos*5;
+break;
+{
+
+    default:
+        precio = 0;
+    cout<<"Codigo incorrecto"<<endl;
+}
+}
+cout<<"El precio total de su llamada es"<<endl;
+cout<<precio;
+
+    return 0;
+}
