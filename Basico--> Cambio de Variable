@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int m,n,aux;
+
+cout<<"Digite valor de m: ";cin>>m;
+cout<<"Digite valor de n: ";cin>>n;
+
+aux = m;
+ m = n;
+ n = aux;
+
+ cout<<"valor de x: "<<m<<endl<<"\nvalor de n:"<<n;
+ return 0;
+ }
